@@ -12,7 +12,7 @@ function App() {
   const [data, setData] = useState(
     localStorage.getItem("kanban-board")
       ? JSON.parse(localStorage.getItem("kanban-board"))
-      : []
+      : [{ "id": "1", "boardName": "Todo", "card": [] }, { "id": "2", "boardName": "Process", "card": []}, { "id": "15bf719a-c002-4cd9-9173-80990d0513fa", "boardName": "Done", "card": [] }]
   );
 
   const defaultDark = window.matchMedia(
